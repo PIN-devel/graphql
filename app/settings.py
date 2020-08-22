@@ -41,10 +41,15 @@ INSTALLED_APPS = [
     # drf
     'rest_framework',
 
-    # app
+    # graphql
+    'graphene_django',
+
+    # apps
     'posts',
 ]
-
+GRAPHENE = {
+    'SCHEMA': 'posts.schema.schema'  # Where your Graphene schema lives
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
