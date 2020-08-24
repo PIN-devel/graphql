@@ -1,5 +1,5 @@
 export default {
-  URL: "http://localhost:8000",
+  URL: "http://192.168.0.101",
   ROUTES: {
     graphql: "/graphql/",
     postList: "/post/viewset/",
